@@ -1,0 +1,16 @@
+{
+    "name": "restvel/restvel",
+    "description": "Son of Laravel for smart world",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Farhan Wazir",
+            "email": "farhan.wazir@gmail.com"
+        }
+    ],
+    "require": {
+        "restvel/framework": "5.3.*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
