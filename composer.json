@@ -9,7 +9,15 @@
         }
     ],
     "require": {
-        "restvel/framework": "5.3.*"
+        "php": ">=5.6.4",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "restvel/framework": "5.4.*"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
