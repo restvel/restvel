@@ -1,24 +1,46 @@
 {
     "name": "restvel/restvel",
-    "description": "Son of Laravel for smart world",
+    "description": "The Restvek Framework.",
+    "keywords": ["cms", "application", "restvel"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Farhan Wazir",
-            "email": "farhan.wazir@gmail.com"
-        }
-    ],
+    "type": "project",
     "require": {
         "php": ">=5.6.4",
-        "ext-mbstring": "*",
-        "ext-openssl": "*",
-        "restvel/framework": "5.4.*"
+        "restvel/framework": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "autoload": {
+        "psr-4": {
+            "App\\": "extension/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php please key:generate"
+        ],
+        "post-install-cmd": [
+            "Restvel\\Foundation\\ComposerScripts::postInstall",
+            "php please optimize"
+        ],
+        "post-update-cmd": [
+            "Restvel\\Foundation\\ComposerScripts::postUpdate",
+            "php please optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
 }

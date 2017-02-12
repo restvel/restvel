@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Command prompt instructor
+ * WARNING:::: DO NOT EDIT
+ */
+
+require_once 'system/ci.php';
