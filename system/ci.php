@@ -12,9 +12,9 @@
 |
 */
 
-require __DIR__ . '/Head/autoload.php';
+require 'Head/bootstrap.php';
 
-$app = require_once __DIR__ . '/Head/app.php';
+$app = require_once 'Head/app.php';
 
 /*
 |--------------------------------------------------------------------------
