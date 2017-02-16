@@ -14,8 +14,14 @@
         "phpunit/phpunit": "~5.7"
     },
     "autoload": {
+        "classmap": [
+            "database"
+        ],
         "psr-4": {
-            "App\\": "extension/"
+            "App\\": "app/",
+            "Module\\": "modules/",
+            "Plugin\\": "plugins/",
+            "Extra\\": "extras"
         }
     },
     "autoload-dev": {
@@ -31,11 +37,11 @@
             "php please key:generate"
         ],
         "post-install-cmd": [
-            "Restvel\\Foundation\\ComposerScripts::postInstall",
+            "Restvel\\Base\\Composer\\Script::postInstall",
             "php please optimize"
         ],
         "post-update-cmd": [
-            "Restvel\\Foundation\\ComposerScripts::postUpdate",
+            "Restvel\\Base\\Composer\\Script::postUpdate",
             "php please optimize"
         ]
     },
