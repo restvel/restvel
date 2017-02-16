@@ -11,7 +11,7 @@
 |
 */
 
-$app = new Illuminate\Foundation\Application(
+$app = new Restvel\Base\Foundation\Application(
     realpath(__DIR__ . '/../../system/')
 );
 
@@ -27,7 +27,7 @@ $app = new Illuminate\Foundation\Application(
 */
 
 $app->singleton(
-    Illuminate\Contracts\Http\Kernel::class,
+    Restvel\Base\Contracts\Http\Kernel::class,
     App\Http\Kernel::class
 );
 

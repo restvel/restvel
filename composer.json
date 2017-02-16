@@ -1,12 +1,12 @@
 {
     "name": "restvel/restvel",
-    "description": "The Restvek Framework.",
+    "description": "The Restvel CMS.",
     "keywords": ["cms", "application", "restvel"],
     "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=5.6.4",
-        "restvel/framework": "dev-master"
+        "restvel/base": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
