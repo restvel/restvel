@@ -21,7 +21,8 @@
             "App\\": "app/",
             "Module\\": "modules/",
             "Plugin\\": "plugins/",
-            "Extra\\": "extras"
+            "Extra\\": "extras",
+            "Restvel\\App\\": "system/Skeleton/app/"
         }
     },
     "autoload-dev": {
