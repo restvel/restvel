@@ -19,7 +19,7 @@
 |
 */
 
-require __DIR__.'/../system/Head/bootstrap.php';
+require __DIR__.'/../system/Head/startup.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -47,10 +47,10 @@ $app = require_once __DIR__.'/../system/Head/app.php';
 |
 */
 
-$kernel = $app->make(Restvel\Contracts\Http\Kernel::class);
+$kernel = $app->make(Restvel\Base\Contracts\Http\Kernel::class);
 
 $response = $kernel->handle(
-    $request = Restvel\Http\Request::capture()
+    $request = Restvel\Base\Http\Request::capture()
 );
 
 $response->send();

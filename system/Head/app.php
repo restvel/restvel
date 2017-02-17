@@ -12,7 +12,7 @@
 */
 
 $app = new Restvel\Base\Foundation\Application(
-    realpath(__DIR__ . '/../../system/')
+    realpath(__DIR__ . '/../../')
 );
 
 /*
@@ -28,17 +28,17 @@ $app = new Restvel\Base\Foundation\Application(
 
 $app->singleton(
     Restvel\Base\Contracts\Http\Kernel::class,
-    App\Http\Kernel::class
+    Restvel\App\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    App\Console\Kernel::class
+    Restvel\App\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Exceptions\Handler::class
+    Restvel\App\Exceptions\Handler::class
 );
 
 /*
