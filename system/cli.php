@@ -12,7 +12,7 @@
 |
 */
 
-require 'Head/bootstrap.php';
+require 'Head/startup.php';
 
 $app = require_once 'Head/app.php';
 

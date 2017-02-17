@@ -5,4 +5,4 @@
  * WARNING:::: DO NOT EDIT
  */
 
-require 'system/ci.php';
+require 'system/cli.php';
