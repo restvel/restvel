@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
+        Restvel\App\Providers\AppServiceProvider::class,
+        Restvel\App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Restvel\App\Providers\EventServiceProvider::class,
+        Restvel\App\Providers\RouteServiceProvider::class,
 
     ],
 

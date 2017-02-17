@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Restvel\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
