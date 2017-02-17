@@ -1,2 +1,2 @@
 <?php
-require_once '../system/Skeleton/bootstrap/autoload.php';
+require_once '../system/Head/startup.php';
